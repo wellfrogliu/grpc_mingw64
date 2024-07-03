@@ -1,0 +1,12 @@
+prefix=C:/Program Files (x86)/grpc
+exec_prefix=${prefix}
+libdir=C:/Program Files (x86)/grpc/lib
+includedir=C:/Program Files (x86)/grpc/include
+
+Name: absl_stacktrace
+Description: Abseil stacktrace library
+URL: https://abseil.io/
+Version: 20220623
+Requires: absl_debugging_internal = 20220623, absl_config = 20220623, absl_core_headers = 20220623
+Libs: -L${libdir}  -labsl_stacktrace
+Cflags: -I${includedir} -DNOMINMAX
